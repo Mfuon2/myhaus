@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.estate
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, data, data-jpa, email-javamail, github-workflow-docker-registry, graalvm, http-client, jackson-databind, java, java-application, jdbc-hikari, junit, lombok, maven, micronaut-aot, mysql, netty-server, openapi, readme, shade, slf4j-simple, spring, spring-boot, spring-data-jpa, swagger-ui, testcontainers, tracing-jaeger, yaml]
