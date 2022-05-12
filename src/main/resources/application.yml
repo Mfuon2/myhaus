@@ -11,11 +11,11 @@ micronaut:
         mapping: /swagger-ui/**
 datasources:
   default:
-    url: jdbc:mysql://localhost:3306/db
+    url: jdbc:mysql://localhost:3306/mn_estate
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: ''
-    schema-generate: CREATE_DROP
+    password: 'root-Admin123'
+    schema-generate: UPDATE
     dialect: MYSQL
 netty:
   default:

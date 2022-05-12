@@ -82,11 +82,6 @@
     </dependency>
     <dependency>
       <groupId>io.micronaut.data</groupId>
-      <artifactId>micronaut-data-hibernate-jpa</artifactId>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.micronaut.data</groupId>
       <artifactId>micronaut-data-spring</artifactId>
       <scope>compile</scope>
     </dependency>
@@ -146,11 +141,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <scope>provided</scope>
@@ -186,9 +176,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <!-- Uncomment to enable incremental compilation -->
-          <!-- <useIncrementalCompilation>false</useIncrementalCompilation> -->
-
           <annotationProcessorPaths combine.self="override">
             <path>
               <groupId>io.micronaut</groupId>
@@ -240,6 +227,8 @@
             <arg>-Amicronaut.processing.group=com.estate</arg>
             <arg>-Amicronaut.processing.module=myhaus</arg>
           </compilerArgs>
+          <source>14</source>
+          <target>14</target>
         </configuration>
       </plugin>
       <plugin>

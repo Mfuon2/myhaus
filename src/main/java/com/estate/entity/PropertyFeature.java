@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @Table(name = "property_features")
-public class PropertyFeatures {
+public class PropertyFeature {
     @Id
     @GeneratedValue
     Long featureId;
@@ -23,8 +23,8 @@ public class PropertyFeatures {
     @Column(name = "description")
     private String description;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "property_id")
-    private Property property;
+    private Property property_id;
 
 }
